@@ -37,23 +37,18 @@
 *::after {
   box-sizing: border-box;
 }
+@media screen and (min-width: 768px)
+  {
+    .sbd{display:block;}
+    .sbm{display:none;}
+  }
 
-@media {
-  .con_mob{
-    display: block;
+@media screen and (max-width: 767px)
+  {/*Mobile*/
+    .sbd{display:none;}
+    .sbm{display:block;}
   }
-  .con_desk{
-    display: none;
-  }
-}
-@media (min-width:768px ) {
-  .con_desk{
-    display: block;
-  }
-  .con_mob{
-    display: none;
-  }
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
