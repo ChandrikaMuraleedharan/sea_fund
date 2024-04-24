@@ -38,6 +38,23 @@
   box-sizing: border-box;
 }
 
+@media {
+  .con_mob{
+    display: block;
+  }
+  .con_desk{
+    display: none;
+  }
+}
+@media (min-width:768px ) {
+  .con_desk{
+    display: block;
+  }
+  .con_mob{
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
